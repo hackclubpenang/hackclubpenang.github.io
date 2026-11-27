@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/photos/favicon.ico" type="image/x-icon" />
+    <title>Hack Club Penang</title>
+    <meta
+      name="description"
+      content="Hack Club Penang is a community of teens in Penang building games, websites, and wild ideas together. Explore Daydream, Sunbeam, and Haven Penang."
+    />
+    <meta name="theme-color" content="#fbf5e9" />
+    <script>
+      (() => {
+        const key = "hackclub-penang-theme";
+        const stored = localStorage.getItem(key);
+        const dark =
+          stored === "dark" ||
+          (stored !== "light" &&
+            matchMedia("(prefers-color-scheme: dark)").matches);
+        document.documentElement.classList.toggle("dark", dark);
+        document.documentElement.style.colorScheme = dark ? "dark" : "light";
+        document
+          .querySelector('meta[name="theme-color"]')
+          ?.setAttribute("content", dark ? "#121018" : "#fbf5e9");
+      })();
+    </script>
+    <meta property="og:title" content="Hack Club Penang" />
+    <meta
+      property="og:description"
+      content="A community of Penang teens making cool things with friends."
+    />
+    <meta property="og:type" content="website" />
+    <script type="module" crossorigin src="/assets/index-Dziw_bDW.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BMiAoRks.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
